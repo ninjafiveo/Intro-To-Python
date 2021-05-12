@@ -1,5 +1,6 @@
 #Booleans are true or false.
 import getpass #Hides passwords typed
+import stdiomask #replaces getpass. Instead of hiding password, it asterisks the password.
 
 def check_boolean():
     print(10 > 9) # 10 is greater than 9 = True
@@ -10,8 +11,8 @@ def check_boolean():
 
 def boolean_condition():
     username = input("Please enter your username: ")
-    # password = input("Please enter your password: ")
-    password = getpass.getpass("Please enter your password: ") #using the getpass import to hide password. 
+    #password = getpass.getpass("Please enter your password: ") #using the getpass import to hide password. 
+    password = stdiomask.getpass("Please enter your password: ") #using the stdiomask import to asterisk password. 
     if username == "admin" and password == "mcctcrocks":
         print("You have been granted access.")
     else:
@@ -20,11 +21,13 @@ def boolean_condition():
         if try_again == "y":
             boolean_condition()
         else:
-            print("Have a nice day.")
+            print("You are not admitted to Nerd Inc.")
 
 # print("Welcome to Nerd Inc.")
-# boolean_condition()
+boolean_condition()
 
+
+    # password = input("Please enter your password: ")
 ####
 ####
 #Operators
