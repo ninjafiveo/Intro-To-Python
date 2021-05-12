@@ -1,6 +1,7 @@
 #Booleans are true or false.
 import getpass #Hides passwords typed
 import stdiomask #replaces getpass. Instead of hiding password, it asterisks the password.
+# ^^^ To import stdiomask, you need to run the following in the terminal: pip install stdiomask
 
 def check_boolean():
     print(10 > 9) # 10 is greater than 9 = True
