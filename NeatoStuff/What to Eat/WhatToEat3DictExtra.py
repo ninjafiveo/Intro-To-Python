@@ -27,7 +27,6 @@ def welcome():
     else:
         print("\n\nWell that wasn't an option! Select one of the options. Please try again.")
         welcome()
-
 welcome()
 
 
